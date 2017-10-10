@@ -1,0 +1,103 @@
+<html>
+<head>
+    <title>
+    Русский Егерь
+    </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Muli:600" rel="stylesheet">                           
+        </head>
+    
+<body>
+    <header>
+        <div class="ps"><p >ПОСВЯЩАЕТСЯ XVI-XVII вв.</p>
+        </div>
+        <div class="name">
+            <h1>Русский Егерь</h1>
+            <p class="vik">Военный исторический клуб</p>
+       
+        </div>
+        
+    </header>
+            
+                 
+<main>
+   
+    
+<section class="strengths">
+    
+    <h2 class="siz" id="ir"> Только у нас</h2>
+    <div class="s1"><p>Эпическая строевая подготовка</p>
+    <img src="img/sp.png" style="border-radius: 10px"></div>
+    <div class="s2"><p>Носить один и тот же костюм зимой и летом</p> <img src="img/sh.jpg" style="border-radius: 10px"></div>
+    <div class="s3"><p>Не много пиротехники</p>
+    <img src="img/fire.png" style="border-radius: 10px"></div>
+    <div class="s4"><p>Можно бить людей</p>
+    <img style="border-radius: 10px" src="img/fight.jpg"></div>
+        
+    
+    </section>
+
+<!--                            ТАБЫ                         -->    
+<section class="my">
+   
+    <h2 class="siz">Почему надо выбирать "Русский Егерь"?</h2>
+    <div class="korpus">
+      <input type="radio" name="odin" checked="checked" id="vkl1"/>
+      <label for="vkl1">Доверие</label>
+      <input type="radio" name="odin" id="vkl2"/>
+      <label for="vkl2">Рабство</label>
+      <input type="radio" name="odin" id="vkl3"/>
+      <label for="vkl3">Массонсвто</label>
+      <input type="radio" name="odin" id="vkl4"/>
+      <label for="vkl4">Пираты</label>
+      <input type="radio" name="odin" id="vkl5"/>
+      <label for="vkl5">Реклама</label>      
+  <div>Через нашу палатку прошло более 100 человек<br>
+  <img src="img/palatka.jpg" alt="Палатка" style="padding: 10px; border-radius: 20px"></div>
+  <div>Мы не отменяли рабство<br>
+  <img src="img/slave.jpg" alt="Рабство" style="padding: 10px; border-radius: 20px"></div>
+  <div>Почувствуй себя масоном. Шутки и термины, которые понятны только внутри клуба<br>
+  <img src="img/mass.jpg" alt="Массоны" style="padding: 10px; border-radius: 20px"></div>
+  <div>Мы называем себя пиратами 17в. Правда у нас нет корабля. Но это не мешает нам бухать и орать странные песни<br>
+  <img src="img/pirat.jpg" alt="Пираты" style="padding: 10px; border-radius: 20px"></div>
+<div>У нас нет реклами казино Вулкан<img src="img/404.jpg" alt="Пираты" style="padding: 10px; border-radius: 20px"></div>
+  </div>
+    </section>
+</main>
+        
+<section class="otz">
+   <center><h2 style="color:azure; font-size:30px;>">Отзывы наших друзей</h2>
+<img src="otzyv/1.png" style="padding: 10px"><br>   
+<img src="otzyv/2.png">      
+ <br>   
+<img src="otzyv/3.png" style="padding: 10px">      
+ </center>
+   
+    
+</section>    
+   <div id="show" class="akcia" onclick="$('#stop').show('5')"><h3>АКЦИЯ</h3>
+     <div  id="stop">
+    Вступай в ряды Чебоксарского стрелецкого приказа
+       и получи бердышом по печени в ПОДАРОК!!!
+       <div class="knopka"><a href="#"  onclick="$('#stop').hide('5')">ВСТУПИТЬ</a></div>
+    </div>
+    <div class="raven" ></div>  
+   </div>
+   <script>
+     $(document).ready(function(){
+           $(".raven").click(function () {
+                       if ($("#stop").is(":hidden")) {
+                               $("#stop").show("slow");
+                       } else {
+                               $("#stop").hide("slow");
+                       }
+ return false;
+});
+});</script>
+  
+   
+    </body>
+
+</html>
